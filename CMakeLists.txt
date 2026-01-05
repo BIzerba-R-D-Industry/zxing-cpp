@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(ZXing)
-
+set(CMAKE_CXX_STANDARD 20)
 option (ZXING_READERS "Build with reader support (decoders)" ON)
 set    (ZXING_WRITERS "ON" CACHE STRING "Build with old and/or new writer (encoder) backend (OFF/ON/OLD/NEW/BOTH)")
 option (ZXING_USE_BUNDLED_ZINT "Use the bundled libzint for barcode creation/writing" ON)
